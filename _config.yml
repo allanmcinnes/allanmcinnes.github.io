@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               Reflective Praxis
 tagline:             'Thoughts on engineering and software development'
 description:         'A collection of thoughts, reflections, and ideas about engineering in general and software development in particular.'
-url:                 http://allanmcinnes.github.io
+#url:                 http://allanmcinnes.github.io
 baseurl:             ''
 paginate:            5
 
