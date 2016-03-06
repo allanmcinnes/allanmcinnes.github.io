@@ -16,9 +16,10 @@ This is really just a definition of a property the system must have, rather than
 Just as bad are requirements that go too far the other way, and tightly prescribe internal software control flow:
 
 > The system shall allow the user to choose an entry to copy to a new date, and then:
-> 1. Shall iterate through the list of calendar entries until the selected entry is found
-> 2. Shall create a new entry with the specified date at the end of the list
-> 3. Shall copy the information from the selected entry to the new entry
+>
+> 1. Shall iterate through the list of calendar entries until the selected entry is found;
+> 2. Shall create a new entry with the specified date at the end of the list;
+> 3. Shall copy the information from the selected entry to the new entry.
 
 On the positive side, this does at least specify some kind of behavior. But it's the wrong kind of behavior, since it's all about internal operations. It isn't a requirement, it's a description of a design. I mean, ok, it does use the word "shall". But that doesn't automatically make it a requirement. How can you tell it's not really a requirement? Because it's essentially impossible to verify without using a debugger to step through the code. If you can't observe it during a test, then the user or customer probably doesn't care about it (ok, yes, there are some situations in which a customer will require that you use a specific algorithm to do something, but those are the exception rather than the rule).
 
@@ -74,15 +75,3 @@ So, to recap:
 * Use a **Given/When/Then** structure to define the required behavior as a relationship between past history, present input, and expected output.
 
 I've been experimenting with this approach lately. I've found it to be helpful for getting me to focus on the *requirements* (rather than the design), and for producing clear, testable requirements statements. Maybe you'll find it helpful too.
-
-## Threads haven't followed (yet)
-
-This is obviously a large topic, and I've only skimmed the surface here. In no particular order, here are a few topics that branch off from the current discussion, but which I chose not to pursue here:
-
-* The difference between a property-style requirement (which expresses what I've called a "timeless truth") and a behavioral requirement (which says something about *when* something should happen) is something like the difference between classical Boolean logic and [temporal logics](https://en.wikipedia.org/wiki/Temporal_logic).
-
-* A *Given/When/Then* structure essentially specifies a state transition. The *Given* describes the starting state, the *When* defines the transitional event, and the *Then* describes the end state.
-
-* Many of the formalisms for specifying what software should do (e.g., Z, the B-Method, TLA+, SCR, or CSP) are structured mathematical way of expressing state transitions.
-
-* What about "non-functional" requirements? I haven't really touched on them at all here.
