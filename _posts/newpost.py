@@ -20,7 +20,7 @@ title: %s
   with open(postname, 'w') as f:
       f.write(slugline)
 
-  subprocess.call(["sublime", postname]) 
+  subprocess.call(["atom", postname]) 
 
 
 if __name__ == "__main__":
