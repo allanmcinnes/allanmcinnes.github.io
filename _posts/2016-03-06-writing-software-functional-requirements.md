@@ -51,7 +51,7 @@ Yes, that's right. All that pondering I've been doing led me to the *Given/When/
 > - *When* some event occurs
 > - *Then* the system does something
 
-Looking at this framework, we can see what's wrong with a property-style requirement masquerading as a functional requirement: it leaves out the *Given* and the *When*. And, in some ways, even the *Then*. In fact, it's not really clear what behavior it's specifying. Returning to the original example, presumably users should not *always* be able to edit calendar entries. Instead, we should see something more like (I do not claim that this is a perfect requirement):
+Looking at this framework, we can see what's wrong with a property-style requirement masquerading as a functional requirement: it leaves out the *Given* and the *When*. And, in some ways, even the *Then*. In fact, it's not really clear what behavior it's specifying. Returning to the original example, presumably users should not *always* be able to edit calendar entries. Instead, we should see something more like:
 
 > - *Given* the number of calendar entries created is greater than the number that have been deleted
 > - *When* the user chooses to edit a calendar entry
