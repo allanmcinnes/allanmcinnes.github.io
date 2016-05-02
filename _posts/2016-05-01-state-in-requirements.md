@@ -13,6 +13,7 @@ The classical way to describe dynamic systems, at least since the time of Newton
 The differential equation is a concept that works great for the kind of systems Newton was interested in (continuously variable quantities in physical systems), but isn't quite so meaningful for describing computational behaviors (which mostly involve discretely varying inputs and outputs). And yet...
 
 Differential equations are really just another form of *Given/When/Then* statement:
+
 > *Given the value of `y` is some number*
 > *When an infinitesimal interval of time `dt` passes*
 > *Then the value of `y` becomes  `y + (0.5 y dt)`*
