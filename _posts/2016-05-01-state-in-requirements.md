@@ -8,11 +8,16 @@ In a [previous note](http://allanmcinnes.github.io/2016/03/06/writing-software-f
 ## Be dynamic!
 The classical way to describe dynamic systems, at least since the time of Newton, is to use one or more differential equations. Maybe you remember differential equations from your calculus classes. Or maybe you've suppressed the memory. Anyway, the basic concept of a differential equation is to describe the rate of change of one or more quantities as a function of the current value of those quantities. Your suppressed memories of calculus class may include equations like:
 
-  *`dy/dt = 0.5 y`*
+> *`dy/dt = 0.5 y`*
 
 The differential equation is a concept that works great for the kind of systems Newton was interested in (continuously variable quantities in physical systems), but isn't quite so meaningful for describing computational behaviors (which mostly involve discretely varying inputs and outputs). And yet...
 
-Differential equations are really just another form of *Given/When/Then* statement: *Given the value of `y` is some number, When an infinitesimal interval of time `dt` passes, Then the value of `y` becomes  `y + (0.5 y dt)`*. The *Given/When/Then* structure essentially specifies a state transition: the *Given* describes the starting state, the *When* defines the trigger for the transition, and the *Then* describes the end state. In the case of physical systems, the state of the system changes in response to the passage of time. In the case of computational systems we often abstract from the passage of time, and focus on how the state of the system changes in response to input events. Many of the formalisms that have been developed for specifying software (e.g., [Z](https://en.wikipedia.org/wiki/Z_notation), the [B-Method](https://en.wikipedia.org/wiki/B-Method), or [SCR](https://www.ics.uci.edu/~alspaugh/cls/shr/SCR.html)) are structured mathematical ways of expressing state transitions.
+Differential equations are really just another form of *Given/When/Then* statement:
+> *Given the value of `y` is some number*
+> *When an infinitesimal interval of time `dt` passes*
+> *Then the value of `y` becomes  `y + (0.5 y dt)`*
+
+The *Given/When/Then* structure specifies a state transition: the *Given* describes the starting state, the *When* defines the trigger for the transition, and the *Then* describes the end state. In the case of physical systems, the state of the system changes in response to the passage of time. In the case of computational systems we often abstract from the passage of time, and focus on how the state of the system changes in response to input events. Many of the formalisms that have been developed for specifying software (e.g., [Z](https://en.wikipedia.org/wiki/Z_notation), the [B-Method](https://en.wikipedia.org/wiki/B-Method), or [SCR](https://www.ics.uci.edu/~alspaugh/cls/shr/SCR.html)) are structured mathematical ways of expressing state transitions.
 
 ## State what the system should do
 Ok, so describing dynamic systems (or behavior) is all about describing state transitions, and that's what a *Given/When/Then* statement does. Which, if you've got any kind of background in computer science, probably has you thinking about *state machines*. It certainly led the ever-insightful Bob Martin to think about state machines, as he explained way back in 2008 in a [post about BDD](https://sites.google.com/site/unclebobconsultingllc/the-truth-about-bdd). So why bother with *Given/When/Then*? Why not just draw a state machine and call the requirements done?
