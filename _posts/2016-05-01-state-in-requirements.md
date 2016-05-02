@@ -14,9 +14,9 @@ The differential equation is a concept that works great for the kind of systems 
 
 Differential equations are really just another form of *Given/When/Then* statement:
 
-> *Given the value of `y` is some number*
-> *When an infinitesimal interval of time `dt` passes*
-> *Then the value of `y` becomes  `y + (0.5 y dt)`*
+> - *Given the value of `y` is some number*
+> - *When an infinitesimal interval of time `dt` passes*
+> - *Then the value of `y` becomes  `y + (0.5 y dt)`*
 
 The *Given/When/Then* structure specifies a state transition: the *Given* describes the starting state, the *When* defines the trigger for the transition, and the *Then* describes the end state. In the case of physical systems, the state of the system changes in response to the passage of time. In the case of computational systems we often abstract from the passage of time, and focus on how the state of the system changes in response to input events. Many of the formalisms that have been developed for specifying software (e.g., [Z](https://en.wikipedia.org/wiki/Z_notation), the [B-Method](https://en.wikipedia.org/wiki/B-Method), or [SCR](https://www.ics.uci.edu/~alspaugh/cls/shr/SCR.html)) are structured mathematical ways of expressing state transitions.
 
