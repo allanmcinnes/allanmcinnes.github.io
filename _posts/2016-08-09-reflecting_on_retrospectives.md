@@ -84,4 +84,4 @@ This process may sound a little rigid. But the actual meetings tend to be fairly
 ## TL;DR
 
 Frequent retrospectives are perhaps the most important practice to include in the software development process, because they
-allow other valuable practices to be introduced on an as-needed basis to fine-tune the project. By regularly asking *What went well?* and *What can we do better?* teams can get the internal feedback they need to rapidly improve their performance. And they can have fun doing it.
+facilitate having other valuable practices be introduced on an as-needed basis to fine-tune the project. By regularly asking *What went well?* and *What can we do better?* teams can get the internal feedback they need to rapidly improve their performance. And they can have fun doing it.
