@@ -22,7 +22,7 @@ a day or two for the retrospective -- and it can only have an impact on the *nex
 ## Anything worth doing is worth overdoing
 
 While I don't doubt the value of end-of-project retrospectives, I think there's even
-more value to be had by holding frequent retrospectives while the project is actually underway.
+more value to be had by holding frequent retrospectives *while the project is actually underway*.
 Holding frequent retrospectives provides your team with rapid feedback on the development
 process, and allows the team to fine-tune the way they're working.
 
@@ -33,7 +33,7 @@ And the lessons you gather can have an immediate impact on your current project:
 > - Finding that
 too many people are checking in broken code?
 > - Think that the new test framework is really helpful and should
-be used more? 
+be used more?
 
 These things will all come up during a retrospective. Bad practices
 are discouraged. Good practices are encouraged. And new practices are introduced to resolve perceived problems.
@@ -44,12 +44,11 @@ reflect on recent successes can help to improve team cohesion.
 
 ## Retrospection in action
 
-Hopefully by this point I've convinced you that you should be holding frequent retrospectives. But
-what does that actually involve? Well, for starters, I absolutely encourage you to read Kerth's [*"The Ritual of Retrospectives"*](http://clearspecs.com/joomla15/downloads/ClearSpecs62V01_The%20Ritual%20of%20Retrospectives_Kerth.pdf) for an excellent overview of how to run a retrospective session (although I'll note that we typically find value in something less formal and more lightweight than what he describes). Beyond that, there are a lot of [different ways](http://retrospectivewiki.org/index.php?title=Retrospective_Plans) to approach the actual gathering of information in a retrospective. I certainly haven't tried
-them all. With that said, here's what's been working well on the teams I've been involved with recently.
+So, what does holding a retrospective actually involve? Well, for starters, I absolutely encourage you to read Kerth's [*"The Ritual of Retrospectives"*](http://clearspecs.com/joomla15/downloads/ClearSpecs62V01_The%20Ritual%20of%20Retrospectives_Kerth.pdf) for an excellent overview of how to run a retrospective session (although I'll note that we typically find value in something less formal and more lightweight than what he describes). Beyond that, there are a lot of [different ways](http://retrospectivewiki.org/index.php?title=Retrospective_Plans) to approach the actual gathering of information in a retrospective. I certainly haven't tried
+them all. With that said, here's a quick summary of what's been working well on the teams I've been involved with recently.
 
 ### Some simple questions
-The questions we're currently asking are:
+The questions we're currently asking in our retrospectives are:
 
  - *What went well?*
  - *What didn't go well?*
