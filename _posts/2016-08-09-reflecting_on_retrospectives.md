@@ -29,10 +29,11 @@ process, and allows the team to fine-tune the way they're working.
 Because you're not waiting until the end of the
 project the retrospective session can be much shorter (ours typically run for 1-2 hours instead of 1-2 days).
 And the lessons you gather can have an immediate impact on your current project:  
-> - Not doing enough pair-programming?
-> - Finding that
+
+ >- Not doing enough pair-programming?
+ >- Finding that
 too many people are checking in broken code?
-> - Think that the new test framework is really helpful and should
+ >- Think that the new test framework is really helpful and should
 be used more?
 
 These things will all come up during a retrospective. Bad practices
