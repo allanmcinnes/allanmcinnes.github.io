@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Ilities Drive Architecture
+title: Why Think About Software Architecture?
 ---
 
 Why do we structure a software design the way we do? 
@@ -31,7 +31,7 @@ And maybe, if you thought about architecture, you used one of the classic archit
 
 But *why* did you do things that way?
 
-I'd argue that, even if you didn't think about it consciously, a lot of your design was driven by various [*"-ilities"*](https://en.wiktionary.org/wiki/ility): the qualities of your system that you're trying to achieve along with meeting the functional requirements.
+If you reflect on the architectural decisions you made I think you'll find that, even if you didn't think about it consciously at the time, a lot of your design was driven by what are sometimes colloquially called [*"-ilities"*](https://en.wiktionary.org/wiki/ility): the *quality attributes* of your system that you're trying to achieve along with meeting the functional requirements.
 
 Much of your architecture was probably driven by a concern for *understandability*. A functional decomposition isn't *necessary* to meet the functional requirements. But decomposing things that way makes it easier to understand how and why individual functional requirements are met. It's certainly easier to understand than spaghetti.
 
@@ -43,12 +43,13 @@ And what about those off-the-shelf components you used? Why not write everything
 
 ## It's all about the -ilities
 
-Seeing architecture as being driven by -ilities is a viewpoint I first encountered in the book [Software Architecture in Practice](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=30264), although I've since encountered other places too. I think it's a useful viewpoint, because it makes you stop and consider *why* your architecture looks the way it does.
+Seeing architecture as being driven by quality attributes (the "-ilities") is a viewpoint I first encountered in the book [Software Architecture in Practice](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=30264). It's a useful viewpoint because instead of just using an architecture someone told you was "good", it makes you stop and consider *why* your architecture looks the way it does.
 
-Is a layered architecture *always* the best choice? It depends on what -ilities you're really interested in. Maybe it makes sense to violate the layering to support other -ilities (a performance-related quality, perhaps). By thinking about those -ilitites you can make that decision in a principled way.
+Is a layered architecture *always* the best choice? It depends on what quality attributes you're really interested in. Maybe it makes sense to violate the layering to support other quality attributes (a performance-related quality, perhaps). By thinking about those quality attributes you can make that decision in a principled way.
 
 What about your use of off-the-shelf components? How did you make your "make vs buy" decision? Were there other criteria in play aside from affordability? Have you considered maintainability or interoperability? Again, you can approach the make/buy decision in a principled way.
 
-Perhaps most importantly, looking at the architecture from the perspective of -ilities can help you think about the -ilities you should consider but haven't yet. How important is reliability to your system? Have you given any thought to preserving confidentiality (a key security property)? What about the usability of your interface? Is there something on Wikipedia's [list of system quality attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes) that you should be considering?
+Perhaps most importantly, looking at the architecture from the perspective of quality attributes can help you think about the quality attributes you *should* consider but *haven't yet*. How important is reliability to your system? Have you given any thought to preserving confidentiality (a key security property)? What about the usability of your interface? Is there something on Wikipedia's [list of system quality attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes) that you should be considering?
 
-So, next time you look at the architecture of your software (either a new design, or your existing project), ask yourself "what are the key -ilities here?" You may find some ways to make your architecture better. And you'll have a much better idea of why your software is structured the way it is.
+## Think about architecture so that you get an architecture you've thought about
+So, next time you look at the architecture of your software (either a new design, or your existing project), ask yourself *"what are the key quality attributes here?"*  You'll have a much better idea of why your software is structured the way it is. And you may just find some ways to make a better architecture.
