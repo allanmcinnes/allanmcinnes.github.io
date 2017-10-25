@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: Reflecting on Retrospectives
+tags: [retrospective, agile, teamwork, scrum, reflection, reflective practitioner]
 ---
 
 I'm coming to believe that frequent *retrospectives* may be one of the most important
