@@ -25,27 +25,26 @@ layout: default
       {% endfor %}  
     {% else %}
       {% comment %} Build related posts from tags {% endcomment %}  
-      {{page.tags}}<br/>
-      {% capture related_post_urls %} {% comment %} Get all pages with matching tags {% endcomment %} 
-        {% for tag in page.tags %}
-          {% for post in site.tags[tag] %}
-            {{post.url}}^
-          {% endfor %}
-        {% endfor %}
-      {% endcapture %}
+      {%- capture related_post_urls -%} {%- comment -%} Get all pages with matching tags {%- endcomment -%} 
+        {%- for tag in page.tags -%}
+          {%- for post in site.tags[tag] -%}
+            {{- post.url -}}^
+          {%- endfor -%}
+        {%- endfor -%}
+      {%- endcapture -%}
     
       {{related_post_urls}}<br/>
     
-      {% assign related_posts = related_post_urls | split: "^" | strip %}
+      {% assign related_posts = related_post_urls | split: "^" %}
       {% assign uniq_related_posts = related_posts | uniq %}
-      {% capture related_post_counts %} {% comment %} Generate frequency count for each page {% endcomment %} 
-        {% for post in uniq_related_posts %}
-          {% unless post.size == 0 or page.url contains post %}
-            {% assign count = related_posts | where_exp: "item", "item == post" | size %}
-            {{count}}@{{post}}^
-          {% endunless %}
-        {% endfor %}
-      {% endcapture %}
+      {%- capture related_post_counts -%} {%- comment -%} Generate frequency count for each page {%- endcomment -%} 
+        {%- for post in uniq_related_posts -%}
+          {%- unless post.size == 0 or page.url contains post -%}
+            {%- assign count = related_posts | where_exp: "item", "item == post" | size -%}
+            {{- count -}}@{{- post -}}^
+          {%- endunless -%}
+        {%- endfor -%}
+      {%- endcapture -%}
     
       {{related_post_counts}}<br/>
       {% assign top_related_posts = related_post_counts | split: "^" | sort | reverse %} 
