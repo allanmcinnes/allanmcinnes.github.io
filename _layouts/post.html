@@ -29,22 +29,21 @@ layout: default
       {% capture related_post_urls %} {% comment %} Get all pages with matching tags {% endcomment %} 
         {% for tag in page.tags %}
           {% for post in site.tags[tag] %}
-            {% unless post.url == page.url %}
-              {{post.url}}{% unless forloop.last %}^{% endunless %}
-            {% endunless %}
+            {{post.url}}
           {% endfor %}
-          {% unless forloop.last %}^{% endunless %}
         {% endfor %}
       {% endcapture %}
     
       {{related_post_urls}}<br/>
     
-      {% assign related_posts = related_post_urls | split: "^" %}
+      {% assign related_posts = related_post_urls | split: "^" | strip %}
       {% assign uniq_related_posts = related_posts | uniq %}
       {% capture related_post_counts %} {% comment %} Generate frequency count for each page {% endcomment %} 
         {% for post in uniq_related_posts %}
-          {% assign count = related_posts | where_exp: "item", "item == post" | size %}
-          {{count}}@{{post}}{% unless forloop.last %}^{% endunless %}
+          {% unless post.size == 0 or page.url contains post %}
+            {% assign count = related_posts | where_exp: "item", "item == post" | size %}
+            {{count}}@{{post}}
+          {% endunless %}
         {% endfor %}
       {% endcapture %}
     
@@ -54,7 +53,7 @@ layout: default
         {% assign post_info = post | split: "@" %}
         {% assign post_obj = site.posts | where_exp: "post", "post.url contains post_info[1]" | first %}
         <li>
-          <h3>{{post_info[0]}}: {{post_info[1]}}
+          <h3>{{post_info[0]}}: {{post_info[1]}} - {{inspect post_obj}} - 
             <a href="{{ site.baseurl }}{{ post_obj.url }}">
               {{ post_obj.title }}
               {% comment %} <small>{{ post_obj.date | date_to_string }}</small> {% endcomment %}
