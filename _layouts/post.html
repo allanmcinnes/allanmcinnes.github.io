@@ -32,6 +32,7 @@ layout: default
           {% endfor %}
         {% endfor %}
       {% endcapture %}
+      {{related_post_urls}}
       {% assign related_posts = related_post_urls | split: "^" %}
       {% assign uniq_related_posts = related_posts | uniq %}
       {% capture related_post_counts %}
@@ -40,6 +41,7 @@ layout: default
           {{count}}@{{post}}{% unless forloop.last %}^{% endunless %}
         {% endfor %}
       {% endcapture %}
+      {{related_post_counts}}
       {% assign top_related_posts = related_post_counts | split: "^" | sort | reverse %} 
       {% for post in top_related_posts limit:3 %}
         {% assign post_info = post | split: "@" %}
@@ -48,7 +50,7 @@ layout: default
           <h3>{{post_info[0]}}: 
             <a href="{{ site.baseurl }}{{ post_object.url }}">
               {{ post_object.title }}
-              <!-- <small>{{ post_object.date | date_to_string }}</small> -->
+              {% comment %} <small>{{ post_object.date | date_to_string }}</small> {% endcomment %}
             </a>
           </h3>
         </li>
