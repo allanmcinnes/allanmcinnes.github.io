@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: Why Think About Software Architecture?
+tags: [architecture, design, design principles, quality attribute]
 ---
 
 Why do we structure a software design the way we do? 
