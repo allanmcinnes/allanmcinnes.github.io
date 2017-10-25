@@ -29,7 +29,7 @@ layout: default
       {% capture related_post_urls %} {% comment %} Get all pages with matching tags {% endcomment %} 
         {% for tag in page.tags %}
           {% for post in site.tags[tag] %}
-            {{post.url}}
+            {{post.url}}^
           {% endfor %}
         {% endfor %}
       {% endcapture %}
@@ -42,7 +42,7 @@ layout: default
         {% for post in uniq_related_posts %}
           {% unless post.size == 0 or page.url contains post %}
             {% assign count = related_posts | where_exp: "item", "item == post" | size %}
-            {{count}}@{{post}}
+            {{count}}@{{post}}^
           {% endunless %}
         {% endfor %}
       {% endcapture %}
