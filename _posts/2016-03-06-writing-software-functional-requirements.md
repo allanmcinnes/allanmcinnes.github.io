@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: Writing Software Functional Requirements
+tags: [requirements, problem definition, specifications, given-when-then, bdd]
 ---
 I've been thinking a lot about software requirements lately. Not the most exciting topic, I know. But they're something I seem to struggle with on a daily basis, and I've seen plenty of other people struggle with them too. Yet they're incredibly important for software development. Having a good set of requirements makes design and implementation *so much* easier. Even if you're following an agile approach, reaching a clear definition of *done* for a user story makes it much easier to know what you're supposed to implement. So why are they so hard to get right?
 
