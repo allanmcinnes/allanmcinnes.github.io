@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true 
+published: true
 title: How Software Learns
 ---
 
@@ -68,4 +68,4 @@ Making some changes harder won't be a problem if the design choices we make keep
 
 You *might* be able to reach a design that aligns with the shearing layers by refactoring as you go. But it'll require active effort to avoid sliding into that "Big Ball of Mud". And you're likely to find that even your refactoring is easier if you get the "grain of the system" aligned with the shearing layers from the start.
 
-That doesn't mean "Big Design Up Front". No sense in designing down to the tiniest detail when you expect everything to change. Instead, I've found it useful to apply what I think of as ["Big Picture Design Up Front"](http://www.codingthearchitecture.com/2017/10/11/evolutionary_design_still_requires_up_front_thinking.html). The result is software that *intentionally* embraces change, because it's designed from the start to *learn well*.
+That doesn't mean "Big Design Up Front". No sense in designing down to the tiniest detail when you expect everything to change. Instead, I've found it useful to apply what I think of as ["Big Picture Design Up Front"](http://www.codingthearchitecture.com/2017/10/11/evolutionary_design_still_requires_up_front_thinking.html). Give some thought to the shearing layers in your software, and plan how to keep them decoupled. The result is software that *intentionally* embraces change, because it's designed from the start to *learn well*.
