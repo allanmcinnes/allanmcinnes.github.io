@@ -5,7 +5,7 @@ title: How Software Learns
 tags: [architecture, design, design principles, agile, bduf]
 ---
 
-Software development approaches that "embrace change" have become immensely popular over the last couple of decades. Many software developers consciously avoid "Big Design Up Front" in favour of incrementally developing software story-by-story. But the idea of *"avoiding BDUF"* often mutates into an attitude that *"if you refactor often enough and a good software architecture will magically just happen"*. Architectural planning is seen as something that you do for big static things, like buildings, not for something dynamic, like software. But what if I told you that buildings are a lot more dynamic than you probably think? Can we learn something about software by looking at buildings?
+Software development approaches that "embrace change" have become immensely popular over the last couple of decades. Many software developers consciously avoid *"Big Design Up Front"* in favour of incrementally developing software story-by-story. But the intent to *"avoid BDUF"* often mutates into an attitude that *"if you refactor often enough then a good software architecture will magically just happen"*. Architectural planning is seen as something that you do for big static things, like buildings, not for something dynamic, like software. But what if I told you that buildings are a lot more dynamic than you probably think? Can we learn something about software by looking at buildings?
 
 Disclaimer: don't let the title fool you, this note is *not* about "machine learning".
 
