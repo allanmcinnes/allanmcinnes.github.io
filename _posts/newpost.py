@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+#!/usr/bin/python
 
 # Derived from Bruce Eckel's NewPost.bat, https://github.com/BruceEckel/BruceEckel.github.io/blob/master/_posts/NewPost.bat
 
@@ -13,6 +13,7 @@ def main(argv):
 layout: post
 published: false
 title: %s
+tags: []
 ---
 
 """ % string.capwords(name)
@@ -20,7 +21,8 @@ title: %s
   with open(postname, 'w') as f:
       f.write(slugline)
 
-  subprocess.call(["atom", postname]) 
+# Not using this right now
+#  subprocess.call(["atom", postname]) 
 
 
 if __name__ == "__main__":
