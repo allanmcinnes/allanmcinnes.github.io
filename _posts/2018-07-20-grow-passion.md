@@ -8,7 +8,7 @@ tags: [motivation, project, design]
 It's often said that you should *do what you love*. But in my career I've sometimes ended up working on things
 that didn't (initially) seem all that exciting, and weren't exactly (to begin with) "what I loved".  And yet...
 
-I've found that I can (https://www.theatlantic.com/science/archive/2018/07/find-your-passion-is-terrible-advice/564932/)[*grow* passion] for things that I wasn't initially interested in, by *loving what I do*. I don't mean that I necessarily love the task itself. Not at the outset, anyway. But I love the *doing*, and the one thing I'm always passionate about is doing the job *well*.
+I've found that I can [*grow* passion](https://www.theatlantic.com/science/archive/2018/07/find-your-passion-is-terrible-advice/564932/) for things that I wasn't initially interested in, by *loving what I do*. I don't mean that I necessarily love the task itself. Not at the outset, anyway. But I love the *doing*, and the one thing I'm always passionate about is doing the job *well*.
 
 By being passionate about *doing* a thing (whatever that thing is) as *well* as I can, I find that I get interested in details that I might otherwise consider boring. And by asking questions (of myself or others) with the goal of getting better at the task, I feed my curiosity. I find myself wanting to know more, and more, about whatever I'm working on. Seeing myself get better at something, or producing something that others find useful, creates a feedback cycle that encourages me to be even more interested in what I'm doing.
 
